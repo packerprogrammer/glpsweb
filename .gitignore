@@ -11,6 +11,7 @@
 /logs
 /tmp
 /configuration.php
+/configuration.php.old
 /.htaccess
 /web.config
 
