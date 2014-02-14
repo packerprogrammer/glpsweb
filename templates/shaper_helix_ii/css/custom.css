@@ -1095,7 +1095,7 @@ submit.social:hover {
 }
 
 .module.green {
-  color: #006600
+  color: #006600;
 }
 
 .module.highlighted h3,
@@ -1113,7 +1113,27 @@ submit.social:hover {
 .module.green h3 {
   padding: 0 0 10px 0;
   border-bottom: 1px solid #006600;
-  color: #006600;
+  color: #4c4c4c;
+}
+.module.green ul {
+  list-style:none;
+  margin-top:0px;
+  margin-right:0px;
+  margin-left:0px;
+  margin-bottom:0px;  
+}
+.module.green li {
+  background-image:url(../images/menu_bullet.png);
+  background-position-x: 0px;
+  background-position-y: 6px;
+  background-size: initial;
+  background-repeat: no-repeat;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: transparent;
+  line-height: 21px;
+  padding-left:15px;
+  padding-right:5px;
 }
 .module.orange {
   background: #f89406;
@@ -1137,7 +1157,7 @@ submit.social:hover {
   background: #fff;
 }
 .module.green a {
-  color: #63E063;
+  color: #006600;
 }
 .module.green a:hover {
   color: #43F043;
