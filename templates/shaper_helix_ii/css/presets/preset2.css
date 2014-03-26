@@ -72,7 +72,10 @@ body.bg {
 .module.highlighted a {
   color: #fff !important;
 }
-#sp-bottom-wrapper,
+#sp-bottom-wrapper {
+  background: #05491b;
+  color: #fff;
+}
 #sp-footer-wrapper {
   background: #010100;
   color: #fff;

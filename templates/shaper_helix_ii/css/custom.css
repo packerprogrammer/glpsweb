@@ -1095,7 +1095,7 @@ submit.social:hover {
 }
 
 .module.green {
-  color: #006600;
+  color: #4c4c4c;
 }
 
 .module.highlighted h3,
@@ -1158,6 +1158,7 @@ submit.social:hover {
 }
 .module.green a {
   color: #006600;
+  text-decoration: underline;
 }
 .module.green a:hover {
   color: #43F043;
