@@ -26,10 +26,11 @@
   box-sizing: border-box;
 }
 a:not(.btn) {
-  color: #252b09;
+  color: #006600;
 }
 a:not(.btn):hover {
-  color: #6d7f1b;
+  color: #008800;
+  text-decoration: underline;
 }
 body {
   color: #444444;
@@ -47,16 +48,26 @@ body.bg {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffeeeeee', GradientType=0);
 }
+#sp-header-2-wrapper {
+  background-color: #f8f8f8;
+  background-image: -moz-linear-gradient(top,#ffffff,#eeeeee);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from(#ffffff),to(#eeeeee));
+  background-image: -webkit-linear-gradient(top,#ffffff,#eeeeee);
+  background-image: -o-linear-gradient(top,#ffffff,#eeeeee);
+  background-image: linear-gradient(to bottom,#ffffff,#eeeeee);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffeeeeee', GradientType=0);
+}
 #sp-header-wrapper .logo {
   background-image: url(../../images/presets/preset2/logo.png);
 }
 #sp-feature-wrapper {
   background-color: #006600;
-  background-image: -moz-linear-gradient(top,#006600,#003300);
-  background-image: -webkit-gradient(linear,0 0,0 100%,from(#006600),to(#003300));
-  background-image: -webkit-linear-gradient(top,#006600,#003300);
-  background-image: -o-linear-gradient(top,#006600,#003300);
-  background-image: linear-gradient(to bottom,#006600,#003300);
+  background-image: -moz-linear-gradient(top,#008800,#004400);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from(#008800),to(#004400));
+  background-image: -webkit-linear-gradient(top,#008800,#004400);
+  background-image: -o-linear-gradient(top,#008800,#004400);
+  background-image: linear-gradient(to bottom,#008800,#004400);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6d7f1b', endColorstr='#ff242a09', GradientType=0);
 }
@@ -73,7 +84,7 @@ body.bg {
   color: #fff !important;
 }
 #sp-bottom-wrapper {
-  background: #05491b;
+  background: #004400;
   color: #fff;
 }
 #sp-footer-wrapper {

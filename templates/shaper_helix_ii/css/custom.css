@@ -508,7 +508,7 @@ label.invalid {
   font-size: 11px;
 }
 #sp-header-wrapper .search {
-  margin-top: 10px;
+  margin-top: 0px;
 }
 #sp-header-wrapper .search form {
   margin: 0;
@@ -645,6 +645,7 @@ ul.breadcrumb {
 button,
 input[type='submit'],
 input[type='button'],
+input[type='reset'],
 submit {
   display: inline-block;
   *display: inline;
@@ -1120,7 +1121,8 @@ submit.social:hover {
   margin-top:0px;
   margin-right:0px;
   margin-left:0px;
-  margin-bottom:0px;  
+  margin-bottom:0px;
+  font-weight:bold;	  
 }
 .module.green li {
   background-image:url(../images/menu_bullet.png);
@@ -1161,7 +1163,7 @@ submit.social:hover {
   text-decoration: underline;
 }
 .module.green a:hover {
-  color: #43F043;
+  color: #008800;
 }
 .module.maroon {
   background: #F35D34;
