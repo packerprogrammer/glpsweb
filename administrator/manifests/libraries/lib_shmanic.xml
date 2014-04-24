@@ -8,10 +8,12 @@
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>shaun@shmanic.com</authorEmail>
 	<authorUrl>www.shmanic.com</authorUrl>
-	<version>2.0.0.400</version>
-	<buildDate>Sun Dec 15 15:54:50 2013</buildDate>
+	<version>2.0.1.16</version>
+	<buildDate>Sun Apr 13 19:52:26 2014</buildDate>
 	<description>LIB_SHMANIC_PLATFORM_XML_DESCRIPTION</description>
 	<build>
+		<folder>adapter</folder>
+		<folder>adapter/response</folder>
 		<folder>exception</folder>
 		<folder>form</folder>
 		<folder>form/fields</folder>
@@ -26,6 +28,8 @@
 		<folder>user</folder>
 		<folder>user/adapters</folder>
 		<folder>util</folder>
+		<filename>adapter/response/commit.php</filename>
+		<filename>adapter/response/commits.php</filename>
 		<filename>exception/invaliduser.php</filename>
 		<filename>exception/stacked.php</filename>
 		<filename>form/fields/jsontextarea.php</filename>
@@ -58,6 +62,7 @@
 		<filename>lib_shmanic.xml</filename>
 	</build>
 	<files>
+		<folder>adapter</folder>
 		<folder>exception</folder>
 		<folder>form</folder>
 		<folder>import</folder>

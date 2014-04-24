@@ -98,6 +98,41 @@ class SHLdapEventDebug extends JEvent
 		SHLog::add(
 			JText::sprintf('LIB_SHLDAPEVENTDEBUG_CALLED', __METHOD__), 11904, JLog::DEBUG, 'ldap'
 		);
+
+		// Let us not insert clear passwords into a log file, accidents can happen
+		if (isset($user['password']) && $user['password'])
+		{
+			$user['password'] = '__OBSCURED__';
+		}
+
+		if (isset($user['password_clear']) && $user['password_clear'])
+		{
+			$user['password_clear'] = '__OBSCURED__';
+		}
+
+		if (isset($new['password']) && $new['password'])
+		{
+			$new['password'] = '__OBSCURED__';
+		}
+
+		if (isset($new['password_clear']) && $new['password_clear'])
+		{
+			$new['password_clear'] = '__OBSCURED__';
+		}
+
+		unset($user['password1']);
+		unset($user['password2']);
+
+		unset($new['password1']);
+		unset($new['password2']);
+
+		SHLog::add(
+			JText::sprintf(
+				'LIB_SHLDAPEVENTDEBUG_DEBUG_11951',
+				preg_replace('/\s+/', ' ', var_export($user, true)),
+				preg_replace('/\s+/', ' ', var_export($new, true))
+			), 11951, JLog::DEBUG, 'ldap'
+		);
 	}
 
 	/**

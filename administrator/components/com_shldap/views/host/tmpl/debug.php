@@ -25,6 +25,12 @@ try
 
 	$client = $this->get('LdapObject');
 
+	if ($this->debug['full'])
+	{
+		echo "Switching on full PHP LDAP debug (outputs to web server log).<br />";
+		$client::fullDebug();
+	}
+
 	echo "Attempting LDAP connection with {$client->info}... <br />";
 
 	$client->connect();

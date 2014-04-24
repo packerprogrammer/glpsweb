@@ -151,6 +151,7 @@ class ShldapModelHost extends JModelAdmin
 		}
 
 		return array(
+			'full' => $form->getValue('debug_full'),
 			'username' => $form->getValue('debug_username'),
 			'password' => $form->getValue('debug_password')
 		);
@@ -174,6 +175,7 @@ class ShldapModelHost extends JModelAdmin
 		$isNew = true;
 
 		// Unset some debug data
+		unset($data['debug_full']);
 		unset($data['debug_username']);
 		unset($data['debug_password']);
 
@@ -186,6 +188,9 @@ class ShldapModelHost extends JModelAdmin
 				$table->load($pk);
 				$isNew = false;
 			}
+
+			// Sets a default proxy encryption flag in the table
+			$table->proxy_encryption = isset($table->proxy_encryption) ? $table->proxy_encryption : false;
 
 			// Deal with the proxy encryption if the password has changed
 			if (isset($data['proxy_encryption'])

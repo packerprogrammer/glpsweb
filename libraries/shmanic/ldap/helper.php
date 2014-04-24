@@ -730,7 +730,7 @@ abstract class SHLdapHelper
 	 * @param   boolean             $log      Log any errors directly to SHLog.
 	 * @param   boolean             $throw    Throws an exception on error OR return array on error.
 	 *
-	 * @return  true|array
+	 * @return  true|SHAdapterResponseCommits
 	 *
 	 * @exception
 	 */
@@ -741,22 +741,22 @@ abstract class SHLdapHelper
 		if ($log)
 		{
 			// Lets log all the commits
-			foreach ($results['commits'] as $commit)
+			foreach ($results->getCommits() as $commit)
 			{
-				if ($commit['status'] === JLog::INFO)
+				if ($commit->status === JLog::INFO)
 				{
-					SHLog::add($commit['info'], 10634, JLog::INFO, 'ldap');
+					SHLog::add($commit->message, 10634, JLog::INFO, 'ldap');
 				}
 				else
 				{
-					SHLog::add($commit['info'], 10636, JLog::ERROR, 'ldap');
-					SHLog::add($commit['exception'], 10637, JLog::ERROR, 'ldap');
+					SHLog::add($commit->message, 10636, JLog::ERROR, 'ldap');
+					SHLog::add($commit->exception, 10637, JLog::ERROR, 'ldap');
 				}
 			}
 		}
 
 		// Check if any of the commits failed
-		if (!$results['status'])
+		if (!$results->status)
 		{
 			if ($throw)
 			{

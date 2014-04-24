@@ -7,8 +7,8 @@
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>shaun@shmanic.com</authorEmail>
 	<authorUrl>www.shmanic.com</authorUrl>
-	<version>2.0.0.400</version>
-	<buildDate>Sun Dec 15 15:54:50 2013</buildDate>
+	<version>2.0.1.16</version>
+	<buildDate>Sun Apr 13 19:52:26 2014</buildDate>
 	<description>PLG_AUTHENTICATION_SHADAPTER_XML_DESCRIPTION</description>
 	<files>
 		<filename plugin="shadapter">shadapter.php</filename>
