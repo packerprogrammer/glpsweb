@@ -904,16 +904,14 @@ submit.social:hover {
   display: block;
   margin: 0;
   padding: 10px;
-  color: #343434;
+  color: #666;
 }
 #sp-main-menu ul.level-0 > li >a .menu-desc {
   font-size: 11px;
   color: #999;
   display: block;
 }
-#sp-main-menu ul.level-0 > li >a:hover {
-  color: #006600;
-}
+#sp-main-menu ul.level-0 > li:hover,
 #sp-main-menu ul.level-0 > li.active {
   background-color: #eee;
   border-bottom: 1px solid #fff;
@@ -955,7 +953,7 @@ submit.social:hover {
   line-height: normal;
   text-decoration: none;
   padding: 10px;
-  color: #343434;
+  color: #999;
 }
 #sp-main-menu li li:not(.sp-menu-group).parent >a span.menu {
   position: relative;

@@ -1,3 +1,3 @@
 <?php
-include ('../private/updaterates.php')
+include ('../../private/updaterates.php')
 ?>
